@@ -1,4 +1,4 @@
-const quizzesReducer = (state = { quizzes: [], loading: false }, action) => {
+export default (state = { quizzes: [], loading: false }, action) => {
     switch(action.type) {
         case 'LOADING_Quizzes':
             return {
@@ -17,4 +17,3 @@ const quizzesReducer = (state = { quizzes: [], loading: false }, action) => {
     }
 }
 
-export default quizzesReducer;
