@@ -5,7 +5,7 @@ const Quiz = ({ quiz }) => {
     return (
     <li className="collection-item">
       Quiz Date: {quiz.quizdate}<br />
-      Answer: { quiz.aanswer } <br />
+      Answer: { quiz.answer } <br />
       {/* <Link to={`/quizzes/${quiz.id}`}>View</Link> */}
     </li>
     );
