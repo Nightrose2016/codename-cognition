@@ -19,7 +19,7 @@ export default class Registration extends Component {
         const { email, password, password_confirmation } = this.state
         console.log("form submitted")
         event.preventDefault();
-        axios.post('https://localhost:3001/registrations', {user: {
+        axios.post('http://localhost:3001/registrations', {user: {
             email: email,
             password: password,
             password_confirmation: password_confirmation
