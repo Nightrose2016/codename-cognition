@@ -69,16 +69,8 @@ class App extends Component {
       <Router>
         <div className="container">
           <Switch>
-          <Route exact path={"/"} render={props => (
-                <Home
-                  {...props}
-                  handleLogin={this.handleLogin}
-                  handleLogout={this.handleLogout}
-                  loggedInStatus={this.state.loggedInStatus}
-                />
-              )}
-            />
-            <Route exact path='/Dashboard' component={Dashboard} />
+          <Route exact path={"/"} render={props => ( <Home {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus}/> )} />
+           <Route exact path={"/dashboard"} render={props => ( <Dashboard {...props} loggedInStatus={this.state.loggedInStatus}/> )} />
           </Switch>
         </div>
       </Router>
