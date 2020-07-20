@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #ae0404;
+  font-family: "p5hatty-webfont", serif;
+  font-size: 24px;
+}
