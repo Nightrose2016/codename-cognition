@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
+import Dashboard from './components/Dashboard'
 import './App.css';
 import NavBar from './components/NavBar';
 import Quizzes from './containers/Quizzes';
@@ -70,7 +71,7 @@ class App extends Component {
         <div className="container">
           <Switch>
             <Route exact path={"/"} render={props => ( <Home {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus}/> )} />
-            {/* <Route exact path={"/dashboard"} render={props => ( <Dashboard {...props} loggedInStatus={this.state.loggedInStatus}/> )} /> */}
+            <Route exact path={"/dashboard"} render={props => ( <Dashboard {...props} loggedInStatus={this.state.loggedInStatus}/> )} />
             <Route exact path="/quizzes" component={Quizzes} />
           </Switch>
         </div>
