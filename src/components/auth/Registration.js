@@ -16,11 +16,11 @@ export default class Registration extends Component {
         this.handleChange = this.handleChange.bind(this)
     }
     handleSubmit(event) {
-        const { email, password, password_confirmation } = this.state
+        const { username, password, password_confirmation } = this.state
         console.log("form submitted")
         event.preventDefault();
         axios.post('http://localhost:3001/registrations', {user: {
-            email: email,
+            username: username,
             password: password,
             password_confirmation: password_confirmation
           }
