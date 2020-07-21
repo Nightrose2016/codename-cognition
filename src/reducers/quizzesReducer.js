@@ -1,19 +1,9 @@
-export default (state = { quizzes: [], loading: false }, action) => {
-    switch(action.type) {
-        case 'LOADING_Quizzes':
-            return {
-                ...state,
-                quizzes: [...state.quizzes],
-                loading: true
-            }
-        case 'ADD_Quiz':
-            return {
-                ...state,
-                quizzes: action.quizzes,
-                loading: false
-            }
+export default(state=[], action) => {
+
+    switch(action.type){
+        case "SET_PETS":
+            return [...action.payload]
         default:
-            return state;
+            return state
     }
 }
-
