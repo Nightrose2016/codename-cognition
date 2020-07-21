@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
-import Quiz from '../components/Quiz'
+import QuizItem from '../components/QuizItem'
 import { connect } from 'react-redux'
+import { fetchQuizzes } from '../actions/quizActions'
 
-class Quizzes extends Component {
+class QuizList extends Component {
+
+  componentDidMount(){
+    this.props.fetchQuizzes()
+  }
+
   render() {
-    const quizzes = this.props.quizzes.map(( quiz, i) => <Quiz key={i} quiz={ quiz } />)
+    const quizzes = this.props.quizzes.map(( quiz, i) => <QuizItem key={i} quiz={ quiz } />)
     return (
       <div>
         <h3>Quizzes</h3>
@@ -24,4 +30,4 @@ const mapStateToProps = state => {
   
   
   
-export default connect(mapStateToProps)(Quizzes)
+export default connect(mapStateToProps, {fetchQuizzes})(QuizList)
