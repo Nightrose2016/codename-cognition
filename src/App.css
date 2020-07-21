@@ -36,9 +36,41 @@
     transform: rotate(360deg);
   }
 }
+@font-face{
+  font-family: "p5hatty-webfont";
+  src: url("./styles/font/p5hatty-webfont.woff")format("woff"),
+  url("./styles/font/p5hatty-webfont.woff2")format("woff2"),
+  url("./styles/font/p5hatty.otf")format("opentype");
+  }
+@font-face{
+  font-family: "earwig-factory";
+  src: url("./styles/font/earwig_factory_rg-webfont.woff")format("woff"),
+  url("./styles/font/earwig_factory_rg-webfont.woff2")format("woff2"),
+  url("./styles/font/Earwig-Factory-RG.otf")format("opentype");
+}
 
 body{
-  background-color: #ae0404;
+  background-color: rgb(124, 1, 1);
   font-family: "p5hatty-webfont", serif;
   font-size: 24px;
+}
+
+h3.earwig{
+  font-family: "earwig-factory";
+  font-size: 60px;
+  color: white;
+  text-shadow: 6px 3px 10px black;
+  text-align: center;
+  margin: 0px 150px 0px;
+}
+h1.earwig{
+  font-family: "earwig-factory";
+  font-size: 100px;
+  color: white;
+  text-shadow: 6px 3px 10px black;
+  text-align: center;
+  margin: 0px 150px 0px;
+}
+h1{
+  text-align: center;
 }
