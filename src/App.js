@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard'
 import './App.css';
 import NavBar from './components/NavBar';
-import Quizzes from './containers/QuizList';
+import QuizList from './containers/QuizList';
 import axios from "axios"
 
 class App extends Component {
@@ -75,7 +75,7 @@ class App extends Component {
           <Switch>
             <Route exact path={"/"} render={props => ( <Home {...props} handleLogin={this.handleLogin} handleLogout={this.handleLogout} loggedInStatus={this.state.loggedInStatus}/> )} />
             <Route exact path={"/dashboard"} render={props => ( <Dashboard {...props} loggedInStatus={this.state.loggedInStatus}/> )} />
-            <Route exact path="/quizzes" component={Quizzes} />
+            <Route exact path="/quizzes" component={QuizList} />
           </Switch>
         </div>
       </Router>
