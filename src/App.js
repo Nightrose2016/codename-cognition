@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard'
 import './App.css';
 import NavBar from './components/NavBar';
-import Quizzes from './containers/Quizzes';
+import Quizzes from './containers/QuizList';
 import axios from "axios"
 
 class App extends Component {
