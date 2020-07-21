@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 
 const QuizItem = ({ quiz }) => {
   return (
-    <li className="collection-item">
-      Quiz Date: {quiz.quizdate}<br />
-      Answer: { quiz.answer } <br />
+    <dl className="collection-item">
+      <dt>Quiz Date: {quiz.quizdate}</dt><br />
+      <dd>Answer: { quiz.quizanswer }</dd> <br />
       {/* <Link to={`/quizzes/${quiz.id}`}>View</Link> */}
-    </li>
+    </dl>
   );
 }
 
-export default connect(QuizItem)
+export default connect(null)(QuizItem)
