@@ -12,14 +12,14 @@ class ExamList extends Component {
   render() {
     const exams = this.props.exams.map(( exam, a) => <ExamItem key={a} exam={ exam } />)
     return (
-      <div>
-        <h3 className="earwig">EXAms</h3>
-        <ul className="exam-collection">
-          { exams }
-        </ul>
-      </div>
-    )
-  }
+        <div>
+            <h3 className="earwig">EXAms</h3>
+            <ul className="exam-collection">
+                { exams }
+            </ul>
+        </div>
+        )
+    }
 }
   
 const mapStateToProps = state => {
