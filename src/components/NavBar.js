@@ -9,6 +9,7 @@ export class NavBar extends Component {
         <div className="container">
           <NavLink to="/" className="game-logo"><img src={gamelogo}></img></NavLink>
           <NavLink to="/quizzes" className="navbar">Quizzes</NavLink>
+          <NavLink to="/exams" className="navbar">Exams</NavLink>
           <ul className="right">
            
           </ul>
