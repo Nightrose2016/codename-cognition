@@ -13,7 +13,7 @@ class QuizList extends Component {
     const quizzes = this.props.quizzes.map(( quiz, i) => <QuizItem key={i} quiz={ quiz } />)
     return (
       <div>
-        <h3>Quizzes</h3>
+        <h3 className="earwig">Quizzes</h3>
         <ul className="collection">
           { quizzes }
         </ul>
