@@ -6,4 +6,4 @@ export const fetchExams = () => {
             dispatch({ type: 'SET_EXAMS', payload: exams })
         })
     }
-  }
+}
