@@ -6,6 +6,10 @@ import './App.css';
 import NavBar from './components/NavBar';
 import QuizList from './containers/QuizList';
 import ExamList from './containers/ExamList'
+import BookList from './containers/BookList'
+import DvdList from './containers/DvdList'
+import MovieList from './containers/MovieList'
+import RetrogameList from './containers/RetrogameList'
 import axios from "axios"
 
 class App extends Component {
@@ -78,6 +82,10 @@ class App extends Component {
             <Route exact path={"/dashboard"} render={props => ( <Dashboard {...props} loggedInStatus={this.state.loggedInStatus}/> )} />
             <Route exact path="/quizzes" component={QuizList} />
             <Route exact path="/exams" component={ExamList} />
+            <Route exact path="/books" component={BookList} />
+            <Route exact path="/dvds" component={DvdList} />
+            <Route exact path="/movies" component={MovieList} />
+            <Route exact path="/retrogames" component={RetrogameList} />
           </Switch>
         </div>
       </Router>
