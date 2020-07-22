@@ -4,9 +4,9 @@ import { connect } from 'react-redux'
 
 const QuizItem = ({ quiz }) => {
   return (
-    <dl className="collection-item">
-      <dt>Quiz Date: {quiz.quizdate}</dt><br />
-      <dd>Answer: { quiz.quizanswer }</dd> <br />
+    <dl className="quiz-collection-item">
+      <dt>Quiz Date: {quiz.quizdate}</dt>
+      <dd>Answer: { quiz.quizanswer }</dd>
       {/* <Link to={`/quizzes/${quiz.id}`}>View</Link> */}
     </dl>
   );
