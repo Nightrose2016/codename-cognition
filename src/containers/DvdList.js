@@ -13,7 +13,7 @@ class DvdList extends Component {
         const dvds = this.props.dvds.map(( dvd, a) => <DvdItem key={a} dvd={ dvd } />)
         return (
             <div>
-                <h3 className="earwig">Dvds</h3>
+                <h3 className="earwig">dvds</h3>
                 <ul className="dvd-collection">
                     { dvds }
                 </ul>

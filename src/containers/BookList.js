@@ -13,7 +13,7 @@ class BookList extends Component {
         const books = this.props.books.map(( book, a) => <BookItem key={a} book={ book } />)
         return (
             <div>
-                <h3 className="earwig">Books</h3>
+                <h3 className="earwig">booKs</h3>
                 <ul className="book-collection">
                     { books }
                 </ul>

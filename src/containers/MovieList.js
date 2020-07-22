@@ -13,7 +13,7 @@ class MovieList extends Component {
         const movies = this.props.movies.map(( movie, a) => <MovieItem key={a} movie={ movie } />)
         return (
             <div>
-                <h3 className="earwig">Movies</h3>
+                <h3 className="earwig">movies</h3>
                 <ul className="movie-collection">
                     { movies }
                 </ul>
