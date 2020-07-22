@@ -1,4 +1,4 @@
-export const fetchRetroGames = () => {
+export const fetchRetrogames = () => {
     return (dispatch) => {
         return fetch('http://localhost:3001/retrogames')
         .then(response => response.json())
