@@ -23,9 +23,9 @@ class ExamList extends Component {
 }
   
 const mapStateToProps = state => {
-  return {
-    exams: state.exams
-  }
+    return {
+        exams: state.exams
+    }
 }
   
   
