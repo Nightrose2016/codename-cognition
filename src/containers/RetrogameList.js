@@ -8,13 +8,13 @@ class RetrogameList extends Component {
     componentDidMount(){
         this.props.fetchRetrogames()
     }
-    
+
     render() {
         const retrogames = this.props.retrogames.map((retrogame, b) => <RetrogameItem key={b} retrogame={ retrogame }/>)
         
         return (
             <div>
-                <h3 className="earwig">Retrogames</h3>
+                <h3 className="earwig">RetRo gAmes</h3>
                 <ul className="retrogame-collection">
                     { retrogames }
                 </ul>
