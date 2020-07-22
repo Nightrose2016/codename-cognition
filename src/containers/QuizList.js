@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import QuizItem from '../components/QuizItem'
+import QuizItem from '../components/items/QuizItem'
 import { connect } from 'react-redux'
 import { fetchQuizzes } from '../actions/quizActions'
 
