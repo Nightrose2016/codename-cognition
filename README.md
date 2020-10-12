@@ -12,6 +12,7 @@ see attributes associated to books, movies, DVDs and games
 
 ## built with
 frontend: React, redux, HTML, Thunk
+
 Backend: Ruby, SQL
 
 ## installation 
