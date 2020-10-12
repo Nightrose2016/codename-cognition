@@ -22,8 +22,8 @@ Clone this repository and the backend located at https://github.com/Nightrose201
 ## usage 
 
 First fire up both the frontend and backend 
-```rails s -p 3001 
-Yarn start``` 
+rails s -p 3001 
+Yarn start
 Then navigate to localhost:3000 
 
  
